@@ -1,0 +1,13 @@
+name: My First Action  # Overall name (optional)
+
+on: [push]  # Triggers on any push to any branch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free virtual machine (runner) provided by GitHub
+    steps:
+      - name: 23f2005610@ds.study.iitm.ac.in  # Your required step name
+        run: echo "Hello from Anjan's action!"
+      
+      - name: Another step
+        run: date  # Just prints current date/time
